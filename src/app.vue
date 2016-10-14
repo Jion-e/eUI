@@ -1,5 +1,8 @@
 <template>
 <div>
+  <div>
+    <v-nav></v-nav>
+  </div>
   <div class="sec" id="gaid">
     <gaid></gaid>
   </div>
@@ -27,7 +30,7 @@
   <div class="sec" id="slider">
     <slider></slider>
   </div>
-  <div class="sec" id="date-picker">
+  <div class="sec" id="datePicker">
     <date-picker></date-picker>
   </div>
   <div class="sec" id="table">
@@ -45,11 +48,39 @@
   <div class="sec" id="tree">
     <tree></tree>
   </div>
+  <div class="sec" id="navMenu">
+    <navMenu></navMenu>
+  </div>
+  <div class="sec" id="tabs">
+    <tabs></tabs>
+  </div>
+  <div class="sec" id="breadcrumb">
+    <breadcrumb></breadcrumb>
+  </div>
+  <div class="sec" id="dropdown">
+    <dropdown></dropdown>
+  </div>
+  <div class="sec" id="steps">
+    <steps></steps>
+  </div>
+  <div class="sec" id="dialog">
+    <v-dialog></v-dialog>
+  </div>
+  <div class="sec" id="tooltips">
+    <tooltips></tooltips>
+  </div>
+  <div class="sec" id="popover">
+    <popover></popover>
+  </div>
+  <div class="sec" id="card">
+    <card></card>
+  </div>
 
 </div>
 </template>
 
 <script>
+  import vNav from './pages/nav.vue'
   import gaid from './components/Gaid.vue'
   import layout from './components/Layout.vue'
   import vButton from './components/Button.vue'
@@ -65,10 +96,20 @@
   import badge from './components/Badge.vue'
   import vProgress from './components/Progress.vue'
   import tree from './components/Tree.vue'
+  import navMenu from './components/NavMenu.vue'
+  import tabs from './components/Tabs.vue'
+  import breadcrumb from './components/Breadcrumb.vue'
+  import dropdown from './components/Dropdown.vue'
+  import steps from './components/Steps.vue'
+  import vDialog from './components/Dialog.vue'
+  import tooltips from './components/Tooltips.vue'
+  import popover from './components/Popover.vue'
+  import card from './components/Card.vue'
 
   export default {
     name: 'app',
     components: {
+      vNav,
       gaid,
       layout,
       vButton,
@@ -84,6 +125,15 @@
       badge,
       vProgress,
       tree,
+      navMenu,
+      tabs,
+      breadcrumb,
+      dropdown,
+      steps,
+      vDialog,
+      tooltips,
+      popover,
+      card,
     }
   };
 </script>

@@ -12,6 +12,10 @@
         plain(是否有颜色倾向): true/false (默认是defalut,激活时才变色)   <br>
         :loading(是否为加载按钮): true/false          <br>
       </p>
+      <strong>事件:</strong>
+      <p>
+        click.native: 源生dom点击事件
+      </p>
     </div>
     <h4>普通按钮:</h4>
     <el-button type="primary" size="large" native-type="submit">按钮</el-button>

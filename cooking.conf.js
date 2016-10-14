@@ -1,5 +1,6 @@
 var path = require('path');
 var cooking = require('cooking');
+var webpack = require('webpack');
 
 cooking.set({
   entry: {
@@ -31,5 +32,10 @@ cooking.set({
   },
   extends: ['vue2', 'less', 'autoprefixer']
 });
+
+cooking.add('plugins.Provide', new webpack.ProvidePlugin({
+    $: 'jquery',
+    'window.jQuery': 'jquery'
+}))
 
 module.exports = cooking.resolve();

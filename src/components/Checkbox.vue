@@ -45,4 +45,7 @@ export default {
 </script>
 
 <style lang="css">
+.el-checkbox__inner::after{
+  box-sizing: content-box;
+}
 </style>
